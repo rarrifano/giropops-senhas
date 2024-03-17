@@ -3,9 +3,7 @@ version: '3.8'
 services:
   giropops-senhas:
     container_name: giropops-senhas
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: rarrifano/linuxtips-giropops-senhas
     ports:
       - "5000:5000"
     environment:
